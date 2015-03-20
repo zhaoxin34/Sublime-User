@@ -1,0 +1,12 @@
+
+*.cache
+
+*.last-run
+
+Package Control.merged-ca-bundle
+
+Package Control.sublime-settings
+
+Package Control.system-ca-bundle
+
+Package Control.user-ca-bundle

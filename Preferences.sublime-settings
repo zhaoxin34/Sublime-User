@@ -1,0 +1,9 @@
+{
+	"auto_complete_selector": "source, text",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"highlight_line": true,
+	"ignored_packages":
+	[
+	],
+	"vintage_start_in_command_mode": true
+}
