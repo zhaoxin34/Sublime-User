@@ -2,9 +2,12 @@
 	"auto_complete_selector": "source, text",
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"highlight_line": true,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"sublimecodeintel"
 	],
+	"use_simple_full_screen": true,
 	"vintage_start_in_command_mode": true,
-	"word_separators": "/\\()\"‘-:,;~!@#$%^&*|+=[]{}`~?"
+	"word_separators": "/\\()\"‘-:,;~!@#$%^&*|+=[]{}`~?<>."
 }

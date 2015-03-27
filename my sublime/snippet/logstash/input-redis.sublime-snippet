@@ -20,5 +20,5 @@ redis {
 	<tabTrigger>input.redis</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>text.logstash</scope>
-	<description>input file</description>
+	<description>input redis</description>
 </snippet>

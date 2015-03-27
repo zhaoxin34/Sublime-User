@@ -9,12 +9,49 @@
 		]
 	}, 
 	//{ "keys": ["super+l"], "command": "move_to", "args": {"to": "eol", "extend": false} },
-	// Move out of common paired characters () and [] with `Tab`
+    // { "keys": ["j", "j"], "command": "exit_insert_mode",
+    //     "context":
+    //     [
+    //         { "key": "setting.command_mode", "operand": false },
+    //         { "key": "setting.is_widget", "operand": false }
+    //     ]
+    // },
+    {
+		"keys": ["super+right"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.7, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	}, {
+		"keys": ["super+left"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.3, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	}, 
+	// { "keys": ["shift+ctrl+."], "command": "code_intel_auto_complete" },
+	// { "keys": ["f2"], "command": "goto_python_definition"},
+	// { "keys": ["f3"], "command": "back_to_python_definition"}
+	{
+		"keys": ["super+up"], 
+		"command": "show_panel", 
+		"args": {
+			"panel": "output.exec"
+		}
+	},
+		// Move out of common paired characters () and [] with `Tab`
 	{
 		"keys": ["tab"],
 		"command": "move",
 		"args": {"by": "characters", "forward": true},
 		"context": [
+			{ "key": "has_next_field", "operator": "equal", "operand": false },
 			// Check if next char matches (followed by anything)
 			{ "key": "following_text", "operator": "regex_match", "operand": "(:?`|\\)|\\]|\\}).*", "match_all": true },
 			// ...and that there is a paid character before it on the same
@@ -30,35 +67,9 @@
 		"command": "move",
 		"args": {"by": "characters", "forward": true},
 		"context": [
+			{ "key": "has_next_field", "operator": "equal", "operand": false },
 			{ "key": "following_text", "operator": "regex_match", "operand": "(?:\"|').*", "match_all": true },
- 
 			{ "key": "preceding_text", "operator": "regex_contains", "operand": "(?:\"|')", "match_all": true }
 		]
-	},	
-    { "keys": ["j", "j"], "command": "exit_insert_mode",
-        "context":
-        [
-            { "key": "setting.command_mode", "operand": false },
-            { "key": "setting.is_widget", "operand": false }
-        ]
-    },{
-		"keys": ["right"],
-		"command": "set_layout",
-		"args":
-		{
-			"cols": [0.0, 0.7, 1.0],
-			"rows": [0.0, 1.0],
-			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-		}
-	}, {
-		"keys": ["left"],
-		"command": "set_layout",
-		"args":
-		{
-			"cols": [0.0, 0.3, 1.0],
-			"rows": [0.0, 1.0],
-			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-		}
 	}
-
 ]
