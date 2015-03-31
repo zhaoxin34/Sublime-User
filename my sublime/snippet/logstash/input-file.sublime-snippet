@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+file {
+	codec => "plain"
+	discover_interval => 15
+	# exclude => ... # array (optional)
+	path => ["${1:/home/sj/workspace/nginx/logs/*.log}" ]
+	# sincedb_path =>
+	sincedb_write_interval => 15
+	start_position => "beginning"
+	stat_interval => 1
+	# tags => ... # array (optional)
+	type => nginx_log
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>input.file</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.logstash</scope>
+	<description>input file</description>
+</snippet>
