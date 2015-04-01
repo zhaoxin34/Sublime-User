@@ -11,6 +11,10 @@
 		{
 			"characters": ".",
 			"selector": "source.python"
+		},
+		{
+			"characters": ".",
+			"selector": "source.js"
 		}
 	],
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
