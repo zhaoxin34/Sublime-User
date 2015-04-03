@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-print("${1:string}")
+print("${1:string}", ${2:arg})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>print</tabTrigger>

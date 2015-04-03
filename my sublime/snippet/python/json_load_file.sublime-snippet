@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-with open('{0:filepathname}', 'r') as fi:
+with open('${1:filepathname}', 'r') as fi:
 	j = json.load(fi)
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

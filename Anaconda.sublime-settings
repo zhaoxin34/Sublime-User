@@ -45,7 +45,7 @@
         will reconnect a new JsonServer with the switched project
         configuration
     */
-    "auto_project_switch": true,
+    "auto_project_switch": false,
 
     /*
         Python Builder Options
@@ -57,7 +57,7 @@
         This is enabled by default, disable it if you experience slowdowns
         when you switch between projects, and fill an issue in GitHub
     */
-    "auto_python_builder_enabled": true,
+    "auto_python_builder_enabled": false,
 
     /*
         Debug Mode:
