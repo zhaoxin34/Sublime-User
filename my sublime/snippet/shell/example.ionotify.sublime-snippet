@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+#!/bin/bash
+app_hosts=(`cat ~/workspace/temp/config/sst-site_hosts_file|tr ',' ' '`)
+deploy_dir=`cat ~/workspace/temp/config/sst-site_deploy_dir`
+echo ${app_hosts[*]}
+echo $deploy_dir
+
+inotifywait -mrq --timefmt '%d/%m/%y %H:%M' --format '%T %w%f %e' \
+--event create,delete,modify ~/workspace/temp/yunying/| while read mydate time file event; do
+        file=`echo $file|grep -v '.svn'`
+        if [ -n "$file" ]; then
+                for host in $app_hosts; do
+                        rsync -av --exclude="**/.svn" ~/workspace/temp/yunying/ $host:$deploy_dir
+                done
+        fi
+done
+]]></content>
+	<tabTrigger>example.inotifywait</tabTrigger>
+	<scope>source.shell</scope>
+	<description>example.inotifywait</description>
+</snippet>
