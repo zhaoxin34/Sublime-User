@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+class ${1:deco}(object):
+
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self, *args):
+        ${2:print('before call')}
+        ret = self.func(*args)
+        ${3:print('after call')}
+        return ret
+]]></content>
+	<tabTrigger>classdeco</tabTrigger>
+	<scope>source.python</scope>
+	<description>define a decorator class</description>
+</snippet>

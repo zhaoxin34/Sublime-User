@@ -16,7 +16,7 @@ inotifywait -mrq --timefmt '%d/%m/%y %H:%M' --format '%T %w%f %e' \
         fi
 done
 ]]></content>
-	<tabTrigger>example.inotifywait</tabTrigger>
+	<tabTrigger>exam.inotifywait</tabTrigger>
 	<scope>source.shell</scope>
-	<description>example.inotifywait</description>
+	<description>example: inotifywait</description>
 </snippet>

@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+class ${1:Deco}(object):
+
+    def __init__(self, ${2:param1}):
+        print("Inside __init__()")
+        self.param1 = param1
+
+    def __call__(self, func):
+        print("Inside __call__()")
+        
+        def wrapped_f(*args):
+            print("Inside wrapped_f()")
+            ret = func(*args)
+            print("After func(*args)")
+            return ret
+        return wrapped_f
+]]></content>
+	<tabTrigger>classdecoparam</tabTrigger>
+	<scope>source.python</scope>
+	<description>define a decorator class</description>
+</snippet>
