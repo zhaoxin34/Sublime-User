@@ -1,0 +1,30 @@
+{
+    "active_server": "202.173.9.31",
+    "servers": {
+        "localhost": {
+            "base_url": "http://202.173.9.31:6200/",
+            "index": "test",
+            "doc_type": "test",
+            "analyzer": "default",
+            "enabled_create_index": true,
+            "enabled_delete_mapping": true,
+            "enabled_delete_document": true,
+            "enabled_delete_index": true,
+            "enabled_index_document": true,
+            "enabled_put_mapping": true,
+            "enabled_register_query": true,
+            "enabled_delete_percolator": true,
+        },
+        "api.siba.tokyo": {
+            "base_url": "https://api.siba.tokyo/public/",
+            "index": "index-zgkksx-my-index",
+            "doc_type": "webpages"
+        }
+    },
+    "benchmarks": {
+        "default": {
+            "requests": 10,
+            "concurrency": 1,
+        }
+    }
+}

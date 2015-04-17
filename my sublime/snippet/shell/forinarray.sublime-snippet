@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+for ${1:v} in \$\{${2:arr}[@]\}; do
+	${3:echo \$v}
+done
+]]></content>
+	<tabTrigger>forinarray</tabTrigger>
+	<scope>source.shell</scope>
+	<description>for in a array</description>
+</snippet>

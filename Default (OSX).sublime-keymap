@@ -105,5 +105,29 @@
             "activate_browser": false,
             "browser_name" : "all"
         }
-    }
+    },  
+    {
+    	"keys": ["g", "v"],
+    	"command": "insert_snippet",
+    	"args": {
+    	  "name": "Packages/User/captured-snippet.sublime-snippet"
+    	}, 
+    	"context":
+        [
+            { "key": "setting.command_mode", "operand": true },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+	},
+	{
+    	"keys": ["g", "c"],
+	    "command": "capture_snippet",
+	    "args": {
+			"name": "User/captured-snippet.sublime-snippet"
+	    } ,
+    	"context":
+        [
+            { "key": "setting.command_mode", "operand": true },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+	}
 ]
