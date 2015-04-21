@@ -74,36 +74,13 @@
 			{ "key": "preceding_text", "operator": "regex_contains", "operand": "(?:\"|')", "match_all": true }
 		]
 	},
-	// //anacoda
-	{"command": "anaconda_goto", "keys": ["g", "d"],
-        "context":
-        [
-            { "key": "selector", "operator": "equal", "operand": "source.python" },
-            { "key": "setting.command_mode", "operand": true },
-            { "key": "setting.is_widget", "operand": false }
-        ]
-    },{"command": "anaconda_doc", "keys": ["g", "s"],
-        "context":
-        [
-            { "key": "selector", "operator": "equal", "operand": "source.python" },
-            { "key": "setting.command_mode", "operand": true },
-            { "key": "setting.is_widget", "operand": false }
-        ]
-    },{"command": "anaconda_find_usages", "keys": ["g", "r"],
-        "context":
-        [
-            { "key": "selector", "operator": "equal", "operand": "source.python" },
-            { "key": "setting.command_mode", "operand": true },
-            { "key": "setting.is_widget", "operand": false }
-        ]
-    },
     // browser_refresh
     {
         "keys": ["super+shift+r"], "command": "browser_refresh", "args": {
             "auto_save": true,
             "delay": 0,
             "activate_browser": true,
-            "browser_name" : "all"
+            "browser_name" : "Google Chrome"
         }
     },
     {
@@ -129,5 +106,51 @@
             { "key": "setting.command_mode", "operand": true },
             { "key": "setting.is_widget", "operand": false }
         ]
-	}
+	},
+	//anacoda
+	{"command": "anaconda_goto", "keys": ["g", "d"],
+        "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" },
+            { "key": "setting.command_mode", "operand": true },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },{"command": "anaconda_doc", "keys": ["g", "s"],
+        "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" },
+            { "key": "setting.command_mode", "operand": true },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },{"command": "anaconda_find_usages", "keys": ["g", "f"],
+        "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" },
+            { "key": "setting.command_mode", "operand": true },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
+	//angularjs
+	{"command": "angularjs_go_to_definition", "keys": ["g", "d"],
+        "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "text.html,source.js" },
+            { "key": "setting.command_mode", "operand": true },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },{"command": "angularjs_go_to_documentation", "keys": ["g", "s"],
+        "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "text.html,source.js" },
+            { "key": "setting.command_mode", "operand": true },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },{"command": "angularjs_find", "keys": ["g", "f"],
+        "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "text.html,source.js" },
+            { "key": "setting.command_mode", "operand": true },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    }
 ]
