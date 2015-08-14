@@ -1,0 +1,38 @@
+{
+	"patterns": {
+		"TODO": "TODO[\\s]*?:[\\s]*(?P<todo>.*)$",
+	    "NOTE": "NOTE[\\s]*?:+(?P<note>.*)$",
+	    "FIXME": "FIX ?ME[\\s]*?:+(?P<fixme>\\S.*)$",
+	    "CHANGED": "CHANGED[\\s]*?:+(?P<changed>\\S.*)$"
+	},
+	"patterns_weight": {
+		"TODO": 1,
+	    "NOTE": 2,
+	    "FIXME": 3,
+	    "CHANGED": 4
+	},
+	"exclude_folders": [
+		"*.git*",
+		"*img*",
+		"*font*",
+		"*jquery*",
+		"*angular*",
+	],
+	"exclude_files": [
+		"*.sublime-workspace",
+		"*.sublime-project",
+		"*min.css",
+		"*jquery*",
+		"*angular*",
+		"*min.css*",
+		"*bootstrap*"
+	],
+	"case_sensitive": true,
+	"render_include_folder": true,
+	"render_folder_depth": 1,
+	"render_maxspaces": 50,
+	"render_header_format": "%d - %c files in %t secs",
+	"render_header_date": "%A %m/%d/%y at %I:%M%p",
+	"navigation_forward_skip" : 10,
+	"navigation_backward_skip" : 10
+}

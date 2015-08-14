@@ -23,13 +23,17 @@
 	],
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"detect_slow_plugins": true,
 	"font_size": 12,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"GitGutter",
+		"bh_core",
 		"sublimecodeintel"
 	],
+	"line_padding_bottom": 1,
 	"open_files_in_new_window": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,

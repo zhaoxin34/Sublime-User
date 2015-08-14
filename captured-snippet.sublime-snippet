@@ -1,3 +1,6 @@
 <snippet><content><![CDATA[
-    "command": "capture_snippet",
+if [request.$1] != "" {
+	urldecode {field => "request.$1"}
+}
+
 ]]></content></snippet>

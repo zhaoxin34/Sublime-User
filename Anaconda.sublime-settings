@@ -87,13 +87,13 @@
 
         This can (and should) be overridden by project settings
     */
-    "python_interpreter": "python",
+    "python_interpreter": "/usr/local/bin/python3",
 
     /*
         Set those as true if you don't want Sublime Text regular completions
     */
-    "suppress_word_completions": false,
-    "suppress_explicit_completions": false,
+    "suppress_word_completions": true,
+    "suppress_explicit_completions": true,
 
     /*
         If complete_parameters is true, anaconda will add function and class

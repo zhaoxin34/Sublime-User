@@ -1,5 +1,6 @@
 {
     "user": {
+        "@python": "3.4",
         "debug": false,
         "delay": 0.25,
         "error_color": "D02000",
@@ -7,10 +8,23 @@
         "gutter_theme_excludes": [],
         "lint_mode": "background",
         "linters": {
+            "htmltidy": {
+                "@disable": true,
+                "args": [],
+                "excludes": []
+            },
             "jshint": {
                 "@disable": false,
                 "args": [],
                 "excludes": []
+            },
+            "pep8": {
+                "@disable": true,
+                "args": [],
+                "excludes": [],
+                "ignore": "E401,E701,E702",
+                "max-line-length": 150,
+                "select": ""
             },
             "pylint": {
                 "@disable": true,
@@ -23,17 +37,21 @@
                 "show-codes": false
             }
         },
-        "mark_style": "outline",
+        "mark_style": "squiggly underline",
         "no_column_highlights_line": false,
         "passive_warnings": true,
         "paths": {
             "linux": [],
-            "osx": [],
+            "osx": [
+                "/usr/local/bin/"
+            ],
             "windows": []
         },
         "python_paths": {
             "linux": [],
-            "osx": [],
+            "osx": [
+                "/usr/local/bin/python3"
+            ],
             "windows": []
         },
         "rc_search_limit": 3,
