@@ -18,6 +18,11 @@
                 "args": [],
                 "excludes": []
             },
+            "lua": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
             "pep8": {
                 "@disable": true,
                 "args": [],

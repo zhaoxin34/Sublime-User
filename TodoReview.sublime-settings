@@ -17,6 +17,8 @@
 		"*font*",
 		"*jquery*",
 		"*angular*",
+		"*node_modules*",
+		"log"
 	],
 	"exclude_files": [
 		"*.sublime-workspace",
@@ -25,7 +27,7 @@
 		"*jquery*",
 		"*angular*",
 		"*min.css*",
-		"*bootstrap*"
+		"*bootstrap*",
 	],
 	"case_sensitive": true,
 	"render_include_folder": true,
